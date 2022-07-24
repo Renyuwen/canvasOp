@@ -50,7 +50,7 @@ function pointLTDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointLTDomUp() {
 	svgDom.removeEventListener('mousemove', pointLTDomMove)
@@ -99,7 +99,7 @@ function pointLCDomMove(e) {
 	svg.movePoint(point)
 	svg.translateRect(rect)
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointLCDomUp() {
 	svgDom.removeEventListener('mousemove', pointLCDomMove)
@@ -157,7 +157,7 @@ function pointLBDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointLBDomUp() {
 	svgDom.removeEventListener('mousemove', pointLBDomMove)
@@ -208,7 +208,7 @@ function pointTCDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointTCDomUp() {
 	svgDom.removeEventListener('mousemove', pointTCDomMove)
@@ -266,7 +266,7 @@ function pointRTDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointRTDomUp() {
 	svgDom.removeEventListener('mousemove', pointRTDomMove)
@@ -317,7 +317,7 @@ function pointRCDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointRCDomUp() {
 	svgDom.removeEventListener('mousemove', pointRCDomMove)
@@ -374,7 +374,7 @@ function pointRBDomMove(e) {
 	svg.translateRect(rect)
 	// 同时更改其他点的坐标
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointRBDomUp() {
 	svgDom.removeEventListener('mousemove', pointRBDomMove)
@@ -422,7 +422,7 @@ function pointBCDomMove(e) {
 	svg.movePoint(point)
 	svg.translateRect(rect)
 	const otherPoints = pointArr.filter(p => p.id !== point.id)
-	svg.moveOtherPoints(rect, otherPoints)
+	svg.moveRectOtherPoints(rect, otherPoints)
 }
 function pointBCDomUp() {
 	svgDom.removeEventListener('mousemove', pointBCDomMove)
